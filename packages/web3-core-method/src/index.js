@@ -699,7 +699,7 @@ Method.prototype.buildCall = function () {
 
 
         var sendRequest = function (payload, method) {
-
+            window.qubic && window.qubic.show();
             if (method && method.accounts && method.accounts.wallet && method.accounts.wallet.length) {
                 var wallet;
 
